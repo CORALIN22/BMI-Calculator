@@ -11,6 +11,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link href="style.css" rel="stylesheet" />
+    <link href="general.css" rel="stylesheet" />
     <title>Frontend Mentor | Body Mass Index Calculator</title>
   </head>
   <body>
@@ -33,18 +34,27 @@
             </p>
           </div>
           <div class="hero-bmi-calculator">
-            <h3>Enter your details below </h3>
-            <input type="radio" id="metric">
-            <label for="metric">Metric</label>
-            <input type="radio" id="imperial">
-            <label for="imperial">Imperial</label> Imperial Height Weight Your BMI
-            is...
-
-            <!-- add score -->
-
-            Your BMI suggests you're
-            <!-- add classification -->. Your ideal weight is between
-            <!-- add range -->.
+            <form class="bmi-form">
+              <h3>Enter your details below </h3>
+              <div>
+                <input type="radio" id="metric">
+                <label for="metric">Metric</label>
+                <input type="radio" id="imperial">
+                <label for="imperial">Imperial</label>
+              </div>
+              <div>
+                <label for="height">Height</label>
+                <input type="text" id="height">
+                <label for="weight">Weight</label>
+                <input type="text" id="weight">
+              </div>
+              <div>
+                <p>Your BMI is...</p>
+                <span> </span>
+                <p>Your BMI suggests you're <span> </span>
+                  Your ideal weight is between<span> </span></p>
+              </div>
+          </form>
           </div>
         </div>
       </section>

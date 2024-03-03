@@ -73,3 +73,10 @@ body {
 .hero-description > p {
   line-height: 1.4;
 }
+
+.bmi-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  overflow: hidden;
+}

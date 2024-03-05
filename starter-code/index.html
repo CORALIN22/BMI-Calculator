@@ -16,46 +16,55 @@
   </head>
   <body>
     <div class="container">
-      
       <section class="hero">
-        
-          <div class="hero-description">
-            <img class="hero-logo" src="./assets/images/logo.svg" />
-            <h1 class="hero-title">
-              Body Mass<br />
-              Index Calculator
-            </h1>
+        <div class="hero-description">
+          <img class="hero-logo" src="./assets/images/logo.svg" />
+          <h1 class="hero-title">
+            Body Mass<br />
+            Index Calculator
+          </h1>
 
-            <p>
-              Better understand your weight in relation to your height using our
-              body mass index (BM) calculator. While BMI is not the sole
-              determinant of a healthy weight, it offers a valuable starting
-              point to evaluate your overall health and well-being.
-            </p>
-          </div>
-          <div class="hero-bmi-calculator">
-            <form class="bmi-form">
-              <h3>Enter your details below </h3>
+          <p>
+            Better understand your weight in relation to your height using our
+            body mass index (BM) calculator. While BMI is not the sole
+            determinant of a healthy weight, it offers a valuable starting point
+            to evaluate your overall health and well-being.
+          </p>
+        </div>
+        <div class="hero-bmi-calculator">
+          <h3 >Enter your details below</h3>
+          <form class="bmi-form">
+            <label class="custom-radio-btn" for="metric">Metric
+              <input type="radio" id="metric" name="unit" required>
+              <span class="circle"></span>
+            </label>
+            <label class="custom-radio-btn">Imperial
+              <input type="radio" id="imperial" name="unit" required>
+              <span class="circle"></span>
+            </label>
               <div>
-                <input type="radio" id="metric">
-                <label for="metric">Metric</label>
-                <input type="radio" id="imperial">
-                <label for="imperial">Imperial</label>
+                <label class="label-down" for="height">Height</label>
+                <input class="custom-input" type="text" id="height" placeholder="cm" required/>
               </div>
               <div>
-                <label for="height">Height</label>
-                <input type="text" id="height">
-                <label for="weight">Weight</label>
-                <input type="text" id="weight">
+                <label class="label-down" for="weight">Weight</label>
+                <input class="custom-input" type="text" id="weight" placeholder="kg" required/>
               </div>
+            </form> 
+            <div class="result">
               <div>
                 <p>Your BMI is...</p>
-                <span> </span>
-                <p>Your BMI suggests you're <span> </span>
-                  Your ideal weight is between<span> </span></p>
-              </div>
-          </form>
+                <span>23.4</span>
+            </div>
+            <div>
+              <p>
+                Your BMI suggests you're a<span>healthy weight</span> Your ideal weight is
+                between<span>63.3kgs-85.2kgs</span>
+              </p>
+            </div>
+            </div>
           </div>
+          
         </div>
       </section>
 

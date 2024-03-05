@@ -21,7 +21,6 @@ body {
 
 .container {
   max-width: 90rem;
-
   margin: 0 auto;
 }
 
@@ -32,6 +31,8 @@ body {
 }
 
 .hero {
+  width: 1276px;
+  height: 737px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -74,9 +75,100 @@ body {
   line-height: 1.4;
 }
 
+.hero-bmi-calculator {
+  max-width: 35rem;
+  padding: 2rem;
+  background-color: #fff;
+  justify-self: left;
+  align-self: center;
+  color: #253347;
+  border-radius: 16px;
+  box-shadow: 16px 32px 56px 0 rgba(143, 174, 207, 0.25);
+}
+.hero-bmi-calculator > h3 {
+  font-weight: 500;
+}
 .bmi-form {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 2.4rem;
+  margin: 2rem auto;
+  justify-items: center;
+}
+
+.bmi-form .label-down {
+  display: block;
+  font-size: 0.6rem;
+  color: #5e6e85;
+  margin-bottom: 0.5rem;
+}
+
+.custom-radio-btn {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 40px;
+}
+
+.custom-radio-btn input[type="radio"] {
+  display: none;
+}
+
+.custom-radio-btn .circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: -4px;
+  border-radius: 50%;
+  border: 1px solid #d8e2e7;
+}
+
+.custom-radio-btn input[type="radio"]:checked + .circle {
+  background-color: #d8e2e7;
+}
+.custom-radio-btn input[type="radio"]:checked + .circle::after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #345ff6;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-input {
+  width: 14rem;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+
+  border-radius: 9px;
+  border: 1px solid #d8e2e7;
+}
+
+.custom-input :checked {
+  background-color: #345ff6;
+}
+.bmi-form input::placeholder {
+  color: #345ff6;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.result {
+  width: 89%;
+  height: 10.3rem;
+  background: linear-gradient(to right, #345ff6, #587dff 70%);
+  border-radius: 9px 990px 990px 9px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
 }

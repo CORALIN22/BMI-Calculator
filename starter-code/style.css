@@ -179,6 +179,9 @@ body {
   row-gap: 1rem;
 }
 
+.welcome {
+}
+
 .result {
   max-width: 89%;
   min-height: 10.3rem;

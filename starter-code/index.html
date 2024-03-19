@@ -12,6 +12,7 @@
     />
     <link href="style.css" rel="stylesheet" />
     <link href="/general.css" rel="stylesheet" />
+
     <title>Frontend Mentor | Body Mass Index Calculator</title>
   </head>
   <body>
@@ -36,7 +37,7 @@
             <h3 >Enter your details below</h3>
             <form class="bmi-form">
               <label class="custom-radio-btn" for="metric">Metric
-                <input type="radio" id="metric" name="unit" required>
+                <input type="radio" id="metric"  name="unit" required>
                 <span class="circle"></span>
               </label>
               <label class="custom-radio-btn">Imperial
@@ -115,27 +116,65 @@
 
 
 
-      </div>
+      <section class="limitation-section">
+        <div class="grid limitation">
+        
+          <div class="limit">
+            <h2>Limitations of BMI</h2>
+            <p class="limit-text">Although BMI is often a practical indicator of healthy weight, it is not
+              suited for every person. Specific groups should carefully consider their
+              BMI outcomes, and in certain cases, the measurement may not be beneficial
+              to use.</p>
+          </div>
+          <div class="limit-box limit-gender">
+            <div class="spacing">
+              <img src="/starter-code/assets/images/icon-gender.svg" alt="Gender">
+              <p class="limit-title">Gender</p>
+          </div>
+            <p class="limit-text">The development and body fat composition of girls and boys
+              vary with age. Consequently, a child's age and gender are considered when
+              evaluating their BMI.</p>
+          </div>
+          <div class="limit-box limit-age">
+            <div class="spacing">
+              <img src="/starter-code/assets/images/icon-age.svg" alt="Age">
+              <p class="limit-title">Age</p>
+           </div>
+            <p class="limit-text">In aging individuals, increased body fat and
+              muscle loss may cause BMI to underestimate body fat content.</p>
+          </div>
+          <div class="limit-box limit-muscle">
+            <div class="spacing">
+              <img src="/starter-code/assets/images/icon-muscle.svg" alt="muscle">
+              <p class="limit-title">Muscle</p>
+           </div>
+            <p class="limit-text">BMI
+              may misclassify muscular individuals as overweight or obese, as it doesn't
+              differentiate muscle from fat.</p>
+          </div>
+          <div class="limit-box limit-pregnancy">
+            <div class="spacing">
+              <img src="/starter-code/assets/images/icon-pregnancy.svg" alt="Pregnancy">
+              <p class="limit-title">Pregnancy</p>
+           </div>
+            <p class="limit-text">Expectant mothers experience
+              weight gain due to their growing baby. Maintaining a healthy pre-pregnancy
+              BMI is advisable to minimise health risks for both mother and child.</p>
+          </div>
+          <div class="limit-box limit-race">
+            <div class="spacing">
+              <img src="/starter-code/assets/images/icon-race.svg" alt="Muscle">
+              <p class="limit-title">Race</p>
+           </div>
+            <p class="limit-text">Certain health concerns may affect individuals of some Black and Asian
+              origins at lower BMIs than others. To learn more, it is advised to discuss
+              this with your GP or practice nurse.</p>
+          </div>
+        </div>
+      </section>
     </main>
-
-      
-
-      <!--  Healthy eating    
-       Limitations of BMI
-      Although BMI is often a practical indicator of healthy weight, it is not
-      suited for every person. Specific groups should carefully consider their
-      BMI outcomes, and in certain cases, the measurement may not be beneficial
-      to use. Gender The development and body fat composition of girls and boys
-      vary with age. Consequently, a child's age and gender are considered when
-      evaluating their BMI. Age In aging individuals, increased body fat and
-      muscle loss may cause BMI to underestimate body fat content. Muscle BMI
-      may misclassify muscular individuals as overweight or obese, as it doesn't
-      differentiate muscle from fat. Pregnancy Expectant mothers experience
-      weight gain due to their growing baby. Maintaining a healthy pre-pregnancy
-      BMI is advisable to minimise health risks for both mother and child. Race
-      Certain health concerns may affect individuals of some Black and Asian
-      origins at lower BMIs than others. To learn more, it is advised to discuss
-      this with your GP or practice nurse. -->
     </div>
+
+    <script src="/script.js"></script>
   </body>
 </html>
